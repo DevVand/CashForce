@@ -1,6 +1,6 @@
 /*Main*/
 main{
-    padding-top: 68px;
+    padding: 68px 0 20px 0;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "texto form" "footer form";
     .texto{
@@ -16,6 +16,7 @@ main{
             }
         }
     }
+    
     form{
         max-width: 479px;
         padding-left: 30px;
