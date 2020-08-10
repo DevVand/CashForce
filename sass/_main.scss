@@ -1,0 +1,80 @@
+/*Main*/
+main{
+    padding-top: 68px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "texto form" "footer form";
+    .texto{
+        grid-area: texto;
+        max-width: 450px;
+        
+        p{
+            @include font-styles($fonte-texto,$lh-texto,$cinza-texto);
+            margin-bottom: 10px;
+            span{
+                color: $azul;
+                font-weight: bold;
+            }
+        }
+    }
+    form{
+        max-width: 479px;
+        padding-left: 30px;
+        grid-area: form;
+        h3{
+            @include font-styles(20px,40px,$azul-escuro);
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+        .form-item{
+            display: flex;
+            flex-direction: column;
+            label{
+                @include font-styles($fonte-pequena,$lh-pequena,$azul-escuro);
+                font-weight: bold;
+                padding-bottom: 9px;
+            }
+    
+            input{
+                border: 1px solid $azul-escuro;
+                @include font-styles($fonte-pequena,$lh-pequena,$cinza-texto);
+                font-weight: bold;
+                padding: 11px 18px;
+                margin-bottom: 24px;
+                height: 40px;
+                border-radius: 6px;
+                outline: none;
+            }
+    
+            input::placeholder,select::placeholder{
+                @include font-styles($fonte-pequena,$lh-pequena,$cinza-claro);
+                font-weight: bold;
+            }
+    
+            select{
+                @include font-styles($fonte-pequena,$lh-pequena,$cinza-claro);
+                font-weight: bold;
+                padding: 11px 18px;
+                margin-bottom: 24px;
+                height: 40px;
+                border-radius: 6px;
+                outline: none;
+                font-weight: bold;
+                background: url('../images/arrow.svg') no-repeat right;
+                appearance: none;
+                background-position-x: 97%;
+                border: 1px solid $azul-escuro;
+                option{
+                    @include font-styles($fonte-pequena,$lh-pequena,$cinza-claro);
+                    font-weight: bold;
+                }
+            }
+    
+            button{
+                @include botao(207px,40px);
+                cursor: pointer;
+                align-self: flex-end;
+            }
+        }
+    }
+}

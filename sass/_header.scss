@@ -1,0 +1,21 @@
+/*Header*/
+header{
+    background-color: $azul;
+    height: 450px;
+    img{
+        padding-top: 78px;
+    }
+
+    p{  
+        @include font-styles(24px,40px,$verde);
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 52px 0 2px 0;
+    }
+    h1{
+        @include font-styles($fonte-titulo,$lh-titulo,#FFF);
+        font-weight: bold;
+        max-width: 544px;
+    }
+}

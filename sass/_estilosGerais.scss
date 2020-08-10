@@ -1,0 +1,56 @@
+$azul: #0B27FA;
+$azul-escuro: #021B51;
+$verde: #00BA91;
+$cinza-texto: #444548;
+$cinza-claro: #DADADA;
+
+$fonte-titulo: 40px;
+$lh-titulo: 52px;
+$fonte-titulo-responsivo: 36px;
+$lh-titulo-responsivo: 40px;
+
+$fonte-texto: 18px;
+$lh-texto: 32px;
+
+$fonte-pequena: 14px;
+$lh-pequena: 18px;
+
+@mixin font-styles($font-size,$line-height,$color){
+    font-style: normal;
+    font-size: $font-size ;
+    line-height: $line-height;
+    color: $color;
+}
+
+@mixin botao($width,$height) {
+    @include font-styles($fonte-pequena,$lh-pequena,$azul-escuro);
+    font-weight: bold;
+    background-color: $verde;
+    border-radius: 6px;
+    width: $width;
+    height: $height;
+}
+
+.container-flex{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-grid{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px; 
+    display: grid;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px; 
+}

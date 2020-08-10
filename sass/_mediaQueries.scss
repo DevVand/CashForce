@@ -1,0 +1,35 @@
+@media only screen and (max-width: 767px){
+    header{
+        img{
+            margin: 0 auto;
+            padding-top: 38px;
+        }
+        h1{
+            font-size: $fonte-titulo-responsivo;
+            line-height: $lh-titulo-responsivo;
+        }
+    }
+
+    main{
+        padding-top: 23px;
+        grid-template-areas: "texto texto" "form form" "footer footer";
+        .texto,form,footer{
+            max-width: 100% !important;
+        }
+        form{
+            padding: 13px 0 0 0;
+        }
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: start;
+        .cashforce{
+            order: 2;
+            padding-top: 20px;
+        }
+        .botao{
+            display: none;
+        }
+    }
+}

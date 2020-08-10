@@ -1,0 +1,19 @@
+/*Footer*/
+footer{
+    grid-area: footer;
+    max-width: 450px !important;
+    margin: 20px 0 !important;
+    padding: 0 !important;
+    align-self: center;
+    align-items: center;
+    justify-content: space-between;
+    
+    .botao{
+        @include botao(177px,40px);
+        text-align: center;
+        padding-top: 11px;
+    }
+    .botao:hover{
+        text-decoration: none;
+    }
+}
